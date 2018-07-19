@@ -41,4 +41,28 @@ men in order of her preference. A stable set of engagements for marriage is one 
     (3, 4)
     (4, 2)
     ```
+=========================================================
+
+## Cycle Detection in an Undirected Graph
+### Problem Statement
+Give an algorithm to detect whether a given undirected graph contains a cycle. If the graph contains a cycle, then your algorithm should output one. (It should not output all cycles in the graph, just one of them.) The running time of your algorithm should be `O(m+n)` for a graph with `n` nodes and `m` edges.
+
+- **Input Format**
+    The first line of the input contains two integers N and M. N is the number of vertices in the graph, assuming that vertices are 1-based. M is the number of edges in the graph. Each of the next M lines, lines 2,...,M+1, contains a pair of integers representing an edge between the pair of vertices.
+    *Example Input*:
+    ```
+    5 5
+    1 3
+    2 3
+    1 2
+    3 5
+    4 5
+    ```
+- **Output Format**
+    If the graph contains a cycle then the output is of the format -
+    ```
+    Cycle Exists
+    <Path of the cycle>
+    ```
+    Otherwise, the output is `No cycle`.
 
